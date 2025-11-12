@@ -39,8 +39,18 @@
         border-radius: 100px;
         width: 40%;
     }
+
+    p {
+        font-weight: 300;
+        font-size: var(--font-size-h3);
+    }
 }
 
 .background {
     background-color: var(--color-black);
+}
+
+.responsive {
+    background-color: var(--color-primary);
+    padding: 80px 110px;
 }
