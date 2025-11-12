@@ -72,12 +72,18 @@
     position: relative;
     height: 100px;
     margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
 }
 
 .swiper-pagination-bullet {
     width: var(--spacing-sm);
     height: var(--spacing-sm);
     border-radius: 0;
+    transform: rotate(45deg);
 }
 .swiper-pagination-bullet-active {
     --swiper-pagination-color: var(--color-white);
