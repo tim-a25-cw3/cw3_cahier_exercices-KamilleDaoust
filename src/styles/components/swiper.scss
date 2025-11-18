@@ -1,16 +1,35 @@
+.swiper-wrapper{
+    height: 100%;
+}
+
+
 .swiper-slide {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: var(--spacing-lg);
+    margin: 50px;
+    width: 100%;
+
+    @media (width <= $breakpoint-lg){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-lg);
+     
+     
+          
+    }
+
 
     .resp-media {
+
+        width: 100%;
         img {
             aspect-ratio: 594/490;
             object-fit: cover;
-
             width: 100%;
-            height: 100%;
             border-radius: 16px;
             display: block;
         }
@@ -22,17 +41,7 @@
         color: var(--color-black);
     }
 
-    h2 {
-        margin: 0;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: var(--spacing-xs);
-        padding: 16px 8px;
-        font-family: var(--font-secondary);
-        font-size: var(--font-size-h2);
-        font-weight: 300;
-    }
+
 
     h3 {
         font-size: var(--font-size-content);
@@ -59,13 +68,49 @@
         gap: 8px;
 
         border-radius: 100px;
-        width: 40%;
+        width: 30%;
+        aspect-ratio: 255/40;
+
+            @media (width <= $breakpoint-lg){
+                width: 30%;
+                aspect-ratio: 255/40;
+            }
+
+             @media (width >= $breakpoint-lg){
+                width: 30%;
+                aspect-ratio: 255/40;
+            }
+
+               @media (width <= 1795px){
+                width: 40%;
+                aspect-ratio: 255/40;
+            }
+
+            @media (width <= $breakpoint-md){
+                width: 40%;
+                aspect-ratio: 255/40;
+            }
+
+            @media (width <= $breakpoint-sm){
+                width: 50%;
+                aspect-ratio: 255/40;
+            }
+
+              @media (width <= $breakpoint-xs){
+                width: 100%;
+                aspect-ratio: 255/40;
+            }
+            
+            
     }
 
     .tag {
         font-weight: 300;
         font-size: var(--font-size-content);
     }
+
+
+    
 }
 
 .swiper-pagination {

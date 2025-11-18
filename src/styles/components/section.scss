@@ -2,7 +2,7 @@
     padding: 80px 0;
 
     h2 {
-        margin: 0;
+        margin: 100px;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -11,6 +11,7 @@
         font-family: var(--font-secondary);
         font-size: var(--font-size-h2);
         font-weight: 300;
+        color: var(--color-black);
     }
 
     h3 {
@@ -38,6 +39,36 @@
 
         border-radius: 100px;
         width: 40%;
+        aspect-ratio: 255/40;
+
+        @media (width <= $breakpoint-lg){
+            width: 50%;
+     
+        }
+          @media (width <= $breakpoint-md){
+            width: 70%;
+     
+        }
+           @media (width <= 1200px){
+            width: 70%;
+     
+        }
+            @media (width <= 800px){
+            width: 100%;
+     
+        }
+           @media (width <=800){
+            width: 70%;
+     
+        }
+          @media (width <= $breakpoint-sm){
+            width: 50%;
+     
+        }
+          @media (width <= $breakpoint-xs){
+            width: 100%;
+     
+        }
     }
 
     p {
